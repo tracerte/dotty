@@ -10,10 +10,17 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+
 # Nim
 if [ -d "$HOME/.nimble/bin" ]
 then
     PATH="$HOME/.nimble/bin:$PATH"
+fi
+
+# IntelliJ
+if [ -d "$HOME/src/ideaIU/bin" ]
+then
+    PATH="$HOME/src/ideaIU/bin:$PATH"
 fi
 
 export PATH
